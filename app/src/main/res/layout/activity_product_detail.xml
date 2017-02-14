@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.inventory.ProductDetailActivity">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/product_image"
+        android:layout_marginBottom="@dimen/margin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold"
+        tools:text="Headphones" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/product_image"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/secondaryText"
+        tools:text="  $209.99" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_image"
+        android:layout_toLeftOf="@id/product_price"
+        android:text="@string/price"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/secondaryText" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/product_name"
+        android:text="@string/quantity"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/secondaryText" />
+
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/quantity"
+        android:layout_toRightOf="@id/quantity"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/secondaryText"
+        tools:text="  100" />
+
+    <LinearLayout
+        android:id="@+id/quantity_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decrease_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/decrease_quantity" />
+
+        <Button
+            android:id="@+id/increase_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/increase_quantity" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/quantity_layout"
+        android:text="@string/sold"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/secondaryText" />
+
+    <TextView
+        android:id="@+id/product_sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sold"
+        android:layout_toRightOf="@id/sold"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/secondaryText"
+        tools:text="  7" />
+
+    <Button
+        android:id="@+id/sell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sold"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/colorAccent"
+        android:text="Sell" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sell"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/colorAccent"
+        android:text="@string/order" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/colorAccent"
+        android:text="delete" />
+
+</RelativeLayout>

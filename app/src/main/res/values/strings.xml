@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Inventory</string>
+
+    <string name="empty_view">Add a product to get started!</string>
+
+    <string name="name">Name:</string>
+
+    <string name="price">Price:</string>
+
+    <string name="quantity">Quantity:</string>
+
+    <string name="decrease_quantity">-</string>
+
+    <string name="increase_quantity">+</string>
+
+    <string name="sold">Sold:</string>
+
+    <string name="sell">Sell</string>
+
+    <string name="order">Order</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="name_field">Name</string>
+
+    <string name="price_field">Price</string>
+
+    <string name="quantity_field">Quantity</string>
+
+    <string name="sold_field">Sold</string>
+
+    <string name="empty_product_information">One or more product fields is empty.</string>
+
+    <string name="zero_quantity">Quantity is zero: cannot perform action.</string>
+
+    <string name="dialog_delete">Are you sure you want to delete this product record?</string>
+
+    <string name="cancel">Cancel</string>
+
+</resources>
